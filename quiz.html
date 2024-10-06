@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Quiz Competition</title>
+    <link rel="icon" href="icon.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css"> <!-- Link to the updated CSS file -->
+    
+    <script src="quiz.js" defer></script> <!-- Link to the updated JS file -->
+</head>
+<body>
+
+    <!-- Navigation Bar with Logo -->
+    <nav>
+        <a href="#" class="nav-logo">
+            <img src="logo4.png" alt="Logo" class="nav-logo" height="23px"> <!-- Replace with your logo image -->
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Solar System</a></li>
+            <li><a href="phenomena.html">Phenomena</a></li>
+            <li><a href="Space Exploration.html">Space Exploration</a></li>
+            <li><a href="quiz.html" class="active">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <!-- Quiz Section -->
+    <section id="quiz-section" class="section">
+        <h2>Space Quiz</h2>
+        <p>Test your knowledge about space phenomena!</p>
+
+        <!-- Quiz Questions will be injected here -->
+        <div id="quiz-container"></div>
+
+        <!-- Submit Button -->
+        <button id="submit-btn">Submit Quiz</button>
+
+        <!-- Result -->
+        <div id="result"></div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard-section" class="section">
+        <h2>Leaderboard</h2>
+        <table id="leaderboard">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Leaderboard Entries will be injected here -->
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

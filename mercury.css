@@ -1,0 +1,238 @@
+/* General styles for Mercury Info page */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Dark background for space theme */
+    color: #fff; /* White text for contrast */
+}
+    
+
+nav {
+    background-color: #1a1a1a;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo {
+height: 27px;
+display: flex;
+width: 34px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+/* Box styling for Mercury details */
+#mercury-info .box {
+    display: flex;
+            justify-content: center; /* Horizontally centers the video */
+            align-items: center;     /* Vertically centers the video */
+            height: 100vh;
+}
+#venus-info .box {
+    display: flex;
+            justify-content: center; /* Horizontally centers the video */
+            align-items: center;     /* Vertically centers the video */
+            height: 100vh;
+}
+#earth-info .box {
+    display: flex;
+            justify-content: center; /* Horizontally centers the video */
+            align-items: center;     /* Vertically centers the video */
+            height: 100vh;
+}
+#mars-info .box {
+    display: flex;
+            justify-content: center; /* Horizontally centers the video */
+            align-items: center;     /* Vertically centers the video */
+            height: 100vh;
+}
+#jupiter-info .box {
+    display: flex;
+            justify-content: center; /* Horizontally centers the video */
+            align-items: center;     /* Vertically centers the video */
+            height: 100vh;
+}
+#saturn-info .box {
+    display: flex;
+            justify-content: center; /* Horizontally centers the video */
+            align-items: center;     /* Vertically centers the video */
+            height: 100vh;
+}
+#uranus-info .box {
+    display: flex;
+            justify-content: center; /* Horizontally centers the video */
+            align-items: center;     /* Vertically centers the video */
+            height: 100vh;
+}
+#neptune-info .box {
+    display: flex;
+            justify-content: center; /* Horizontally centers the video */
+            align-items: center;     /* Vertically centers the video */
+            height: 100vh;
+}
+/* Planet image styling */
+.planet-video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Center the image */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Paragraph styling for detailed info */
+#mercury-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+#venus-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+#venus-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+#mars-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+#jupiter-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+#saturn-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+#uranus-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+#neptune-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    #mercury-info .box {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    #mercury-info p {
+        font-size: 16px;
+    }
+    #venus-info .box {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    #venus-info p {
+        font-size: 16px;
+    }
+    #earth-info .box {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    #earth-info p {
+        font-size: 16px;
+    }
+    
+    #mars-info .box {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    #mars-info p {
+        font-size: 16px;
+    }
+    
+    #jupiter-info .box {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    #jupiter-info p {
+        font-size: 16px;
+    }
+    
+    #saturn-info .box {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    #saturn-info p {
+        font-size: 16px;
+    }
+    
+    #uranus-info .box {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    #uranus-info p {
+        font-size: 16px;
+    }
+    
+    #neptune-info .box {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    #neptune-info p {
+        font-size: 16px;
+    }
+}

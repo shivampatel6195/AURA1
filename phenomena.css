@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Video Styling */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1; /* Ensures it stays behind the content */
+    object-fit: cover;/* Optional: you can adjust the opacity if needed */
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: transparent; /* Make sure the background is transparent to show the video */
+    color: #fff;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    line-height: 1.6;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ddd;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.8); 
+    backdrop-filter: blur(10px); /* Blurring effect for modern glass look */
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav-logo {
+    height: 27px;
+    display: flex;
+    width: 34px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 34px;
+    border-radius: 8px;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Remove underline */
+}
+
+nav ul li a:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+nav ul li a.active {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Section Styles */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    z-index: 1; /* Ensure the content stays on top of the video */
+    position: relative;
+    margin-top: 70px; /* Offset for fixed nav */
+}
+
+.section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Phenomena Styles */
+.phenomenon {
+    background-color: #1a1f3d;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+}
+
+.phenomenon h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.phenomenon p {
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.phenomenon .video-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    margin-bottom: 30px;
+}
+
+.phenomenon video {
+    width: 100%;
+    max-width: 720px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .phenomenon {
+        padding: 20px;
+    }
+
+    .phenomenon h3 {
+        font-size: 1.6em;
+    }
+
+    .video-placeholder video {
+        max-width: 100%;
+    }
+}
